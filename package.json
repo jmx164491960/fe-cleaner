@@ -1,0 +1,25 @@
+{
+  "name": "fe-cleaner",
+  "version": "1.0.0",
+  "description": "废旧资源清理工具，可清理Vue项目和back2front项目",
+  "main": "./src/main",
+  "scripts": {
+    "clean": "node ./src/main",
+    "vue-demo": "node ./src/main -t vue -p webapp-attendance -d 1 -e test -S E:/svn/frontend/server/test/webapp-attendance/tags -s E:/svn/frontend/static/test/webapp-attendance -T E:/trash",
+    "b2f-demo": "node ./src/main -t b2f -p h5page.ibeiliao.com -d 60 -e test -S E:/svn/frontend/server/test/h5page.ibeiliao.com -s E:/svn/frontend/static/test/h5page.ibeiliao.com -T E:/trash"
+  },
+  "contributors": ["jiangminxi", "兔子"],
+  "private": true,
+  "engines": {
+    "node": ">= 6.5.0",
+    "npm": ">= 3.0.0"
+  },
+  "bin": {
+    "fe-cleaner": "./src/main.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.16.0",
+    "fse": "^4.0.1"
+  }
+}
